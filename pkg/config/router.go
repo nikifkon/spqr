@@ -59,6 +59,7 @@ type Router struct {
 	FrontendTLS      *TLSConfig        `json:"frontend_tls" yaml:"frontend_tls" toml:"frontend_tls"`
 	BackendRules     []*BackendRule    `json:"backend_rules" toml:"backend_rules" yaml:"backend_rules"`
 	ShardMapping     map[string]*Shard `json:"shards" toml:"shards" yaml:"shards"`
+	MemqdbBackupPath string            `json:"memqdb_backup_path" toml:"memqdb_backup_path" yaml:"memqdb_backup_path"`
 }
 
 type QRouter struct {
